@@ -1,4 +1,5 @@
-//1.
+//1.Given an array of strings, use a function to reverse all the elements in the string in ascending order and the 
+//specific elements in descending order
 function reverseStringInArray(arr){
   const reverseStrings = arr.map(str => [...str].reverse().join(''))
   console.log(reverseStrings)
@@ -7,7 +8,9 @@ function reverseStringInArray(arr){
 reverseStringInArray(["Cynthia","Jane","Faith","Ruby"])
 
 
-//2
+//2Using JS functions and an array of numbers, return positive if an element within the array is positive, negative
+// if an element is negative, else zero
+
 function checkElement(array,index){
 const number = array[index]
 
@@ -27,7 +30,7 @@ console.log(checkElement(numbers,3));
 //write a function that returns a new array of employee objects sorted by their salary in ascending order.
 
 function sortBySalary(employees){
-return employees.sort((a, b) =>a.salary - b.salary )
+return employees.sort((x, y) =>x.salary - y.salary )
 
 }
 const employees = [
@@ -39,14 +42,16 @@ const myEmployees = sortBySalary(employees);
 console.log(myEmployees)
    
 
-//4
+//4Write a function that accepts an array of numbers and uses the forEach() method to console.log each number multiplied by 2.
 function multiply(numbers) {
     numbers.forEach((number) => {
        console.log(number * 2);
     });
    }
    multiply([4, 5, 6, 7]);
-//5
+//5Write a function that takes in an array of numbers and consoles the first four items multiplied by 8 and the last two added by 5.
+// Console the array with the new values
+
 function changeArray2(arr) {
     const firstFour = arr.slice(0, 4).map(item => item * 8);
     const lastTwo = arr.slice(-2).map(item => item + 5);
